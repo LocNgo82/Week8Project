@@ -1,9 +1,18 @@
+
 /*
 set the body default font family
 */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+/*
+set the border-box to account for any border and padding in the values 
+specify for an element's width and height.
+*/
+* {
+  box-sizing: border-box;
+}
+
 /*
 set a default image's width and height
 */
@@ -52,6 +61,7 @@ set the h1 font's margin-top to 0 to align with the navigation menu bar.
 */
 h1#welcome {
 	margin-top: 0px;
+	
 }
 /*
 set a maring inside the content box with top and bottom to zero.
@@ -70,7 +80,7 @@ div#tswcontainer {
 /*
 pad the left and right inside of the side column with 5 pixels.
 */
-div#tswsideproper, div#tswothersideproper {
+div#tswsideproper {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -83,8 +93,8 @@ div#tswheader {
 }
 
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media only screen and ( max-width : 600px ) {
+/* Responsive layout - when the screen is less than 500 pixels wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and ( max-width : 599px ) {
   div#tswsidecol {
     float: none;
     width: 100%;
@@ -108,13 +118,7 @@ set no padding to the container.
 #tswcontainer {
   padding: 0px;
 }
-/*
-set no padding to the welcome class.
-This is the h1 font in the content column.
-*/
-#welcome {
-  padding: 0px;
-}
+
 /*
 set the width and height of my cat's picture to 230 pixels by 309 pixels.
 */
@@ -162,36 +166,11 @@ label {
 set the input boxes' padding and placement for the form in contact me page.
 */
 input[type=text] {
-  width: 50%;
+	width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-}
-
-/*
-set the border-box to account for any border and padding in the values 
-specify for an element's width and height.
-*/
-* {
-  box-sizing: border-box;
-}
-/*
-set the label columns width.
-*/
-.col12 {
-	float: left;
-	width: 12%;
-	margin-top: 6px;
-
-}
-/*
-set the input text boxes width.
-*/
-.col88 {
-	float: left;
-	width: 88%;
-	margin-top: 6px;
 }
 
 
@@ -214,7 +193,7 @@ input[type=submit] {
 
 /* Responsive layout - when the screen is less than 600px wide, 
 make the labels and input boxes stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .col12, .col88 {
     width: 100%;
     margin-top: 0;
