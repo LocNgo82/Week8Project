@@ -1,24 +1,43 @@
+/*
+set the body default font family
+*/
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/*
+set a default image's width and height
+*/
 img {
   max-width: 100%;
   width: auto;
   height: auto;
 }
-
+/*
+set default setting for input and button
+*/
 input, button {
   max-width: 100%;
 }
 
+/*
+set the side column to float left,
+occupied 20% of the page
+text color to black
+background color set to white
+*/
 div#tswsidecol {
   float: left;
   width: 20%;
   color: black;
   background-color: white;
 }
-
+/*
+set the content column to float right,
+occupied 80% of the page
+text color to black
+background color set to white
+top and bottom margin set to 0
+*/
 div#tswcontent {
   float: right;
   width: 80%;
@@ -28,33 +47,42 @@ div#tswcontent {
   padding-bottom: 0px;
 }
 
+/*
+set the h1 font's margin-top to 0 to align with the navigation menu bar.
+*/
 h1#welcome {
 	margin-top: 0px;
-	
 }
+/*
+set a maring inside the content box with top and bottom to zero.
+right and left margin to 5 pixels.
+*/
 div#tswcontproper {
   padding: 0px 5px;
 }
-
+/*
+set the entire background to white.
+*/
 div#tswcontainer {
   background-color: white;
   
 }
-
+/*
+pad the left and right inside of the side column with 5 pixels.
+*/
 div#tswsideproper, div#tswothersideproper {
   padding-left: 5px;
   padding-right: 5px;
 }
-
+/*
+set the header section text color to black and background to white.
+*/
 div#tswheader {
   color: black;
   background-color: white;
 }
 
-div#tswfooter {
-  color: black;
-  background-color: white;
-}
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media only screen and ( max-width : 600px ) {
   div#tswsidecol {
@@ -67,49 +95,72 @@ div#tswfooter {
   }
 }
 
+/*
+set the width and height of my picture to 55 pixels by 81 pixels.
+*/
 img#lu {
   width: 55px;
   height: 81px;
 }
-
+/*
+set no padding to the container.
+*/
 #tswcontainer {
   padding: 0px;
 }
-
+/*
+set no padding to the welcome class.
+This is the h1 font in the content column.
+*/
 #welcome {
   padding: 0px;
 }
-
+/*
+set the width and height of my cat's picture to 230 pixels by 309 pixels.
+*/
 #gg {
 	width: 230px; 
 	height: 309px;
 }
-
+/*
+set the width and height of my dog's picture to 230 pixels by 309 pixels.
+*/
 #daisy {
 	width: 230px; 
-	
+	height: 309px;
 }
-
+/*
+set the width and height of my kayak picture to 230 pixels by 309 pixels.
+*/
 #kayak {
 	width: 460px; 
 	height: 309px;
 }
-
+/*
+set the table size in myacademics page.
+*/
 table {
 	width: 482px; 
 	height: 155px; 
 	border: 1px solid;
 }
-
+/*
+set the table header and table cell border to 1 pixel solid.
+*/
 th, td {
 	border: 1px solid;
 }
-
+/*
+set the labels' padding and placement for the form in contact me page.
+*/
 label {
   padding: 5px 5px 5px 0;
   display: inline-block;
+  font-weight: bold;
 }
-
+/*
+set the input boxes' padding and placement for the form in contact me page.
+*/
 input[type=text] {
   width: 50%;
   padding: 10px;
@@ -118,16 +169,25 @@ input[type=text] {
   resize: vertical;
 }
 
+/*
+set the border-box to account for any border and padding in the values 
+specify for an element's width and height.
+*/
 * {
   box-sizing: border-box;
 }
-
+/*
+set the label columns width.
+*/
 .col12 {
 	float: left;
 	width: 12%;
 	margin-top: 6px;
-}
 
+}
+/*
+set the input text boxes width.
+*/
 .col88 {
 	float: left;
 	width: 88%;
@@ -135,11 +195,13 @@ input[type=text] {
 }
 
 
-label {
-  font-weight: bold;
-}
-
-
+/*
+set the submit button to green, text color to white
+and pad top and bottom with 12 pixels
+pad right and left with 20 pixels
+no border, and round corner.
+use hand pointer when hover over the input box.
+*/
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
